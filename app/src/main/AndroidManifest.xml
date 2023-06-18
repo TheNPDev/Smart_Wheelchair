@@ -41,6 +41,22 @@
             android:value="${MAPS_API_KEY}" />
 
         <activity
+            android:name=".SearchWheelchair"
+            android:exported="false"
+            android:label="SearchWheelChair">
+        </activity>
+        <activity
+            android:name=".SearchForm"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="${MAPS_API_KEY}" />
+        <activity
             android:name=".MyWheelchair"
             android:exported="false"
             android:label="@string/title_activity_my_wheelchair" />
