@@ -5,6 +5,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import androidx.cardview.widget.CardView
 import com.google.firebase.auth.FirebaseAuth
 
 class MainActivity : AppCompatActivity() {
@@ -27,6 +28,12 @@ class MainActivity : AppCompatActivity() {
                 .setNegativeButton("No", null)
                 .show()
 
+        }
+
+        val mywheel = findViewById<CardView>(R.id.option1)
+        mywheel.setOnClickListener {
+            val intent1 = Intent(this, MyWheelchair::class.java)
+            startActivity(intent1)
         }
     }
 }
